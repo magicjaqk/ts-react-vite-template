@@ -1,6 +1,7 @@
 {
   "name": "ts-react-vite-template",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
