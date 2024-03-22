@@ -3,27 +3,11 @@
 - **template of:** vite + react + typescript
 - **tailwindcss:** v3.x
 
-## Started
-```bash
-yarn
-# or `npm install`
-```
+## Recommended Libraries
 
----
-## Develop
-```bash
-yarn dev
-# or `npm run dev`
-```
-
----
-## Build
-```bash
-yarn build
-# or `npm run build`
-```
-
----
-<p align="center">
-<img src="./powered-by-vitawind-bright.png">
-</p># ts-react-vite-template
+- [Lenis](https://lenis.darkroom.engineering/)
+- [Tanstack Router](https://tanstack.com/router/latest)
+- [React Query](https://react-query.tanstack.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [React Spring](https://react-spring.dev/)
+- [React useGesture](https://use-gesture.netlify.app/)
