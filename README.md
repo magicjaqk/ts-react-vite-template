@@ -49,7 +49,7 @@ npm run dev
 - [React Query](https://react-query.tanstack.com/)
 - [React Hook Form](https://react-hook-form.com/)
 - [Motion](https://motion.dev/)
-- [React useGesture](https://use-gesture.netlify.app/)
+- [React useGesture](https://use-gesture.netlify.app/) (use when Motion's built in gestures aren't enough)
 
 ## Metaframeworks
 - [NextJS](https://nextjs.org/)
