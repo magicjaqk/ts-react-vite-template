@@ -78,6 +78,7 @@ Svelte is great for using with teams that are unfamiliar with the React ecosyste
 
 <div>
   <div>Count: {count}</div>
+  <!--           ^ and reading the variable stays up to date with state -->
   <button onclick={increment}>Increment</button>
 </div>
 ```
