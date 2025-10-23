@@ -12,35 +12,31 @@ When writing React components, it's often really nice to spin up a clean project
 ### Prerequisites
 
 1. Install [`degit`](https://github.com/Rich-Harris/degit)
-
-```bash
-npm install -g degit
-```
+  ```bash
+  npm install -g degit
+  ```
 
 ## Using this template
 
 1. Run the clone command via degit
-
-```bash
-degit magicjaqk/ts-react-vite-template [PROJECT_NAME]
-```
+  ```bash
+  degit magicjaqk/ts-react-vite-template [PROJECT_NAME]
+  ```
 
 2. Change to the directory of the project
-```bash
-cd [PROJECT_NAME]
-```
+  ```bash
+  cd [PROJECT_NAME]
+  ```
 
 3. Install dependencies
-
-```bash
-npm install
-```
+  ```bash
+  npm install
+  ```
 
 4. Start the development server
-
-```bash
-npm run dev
-```
+  ```bash
+  npm run dev
+  ```
 
 ## Recommended Libraries
 
