@@ -66,6 +66,22 @@ npm run dev
 
 Svelte is great for using with teams that are unfamiliar with the React ecosystem. The *Svelte*-specific ecosystem is smaller; however, the layer between svelte templating and raw javascript is far thinner. That makes it possible to use almost any javascript library with very little effort.
 
+```svelte
+<script lang="ts">
+  let count = $state(0)
+  //    ^ compiler turns this into a getter and a setter
+
+  const increment = () => {
+    count += 1 // so updating the variable updates the state
+  }
+</script>
+
+<div>
+  <div>Count: {count}</div>
+  <button onclick={increment}>Increment</button>
+</div>
+```
+
 With Svelte, you'll often be paving your own way forward in Svelte-land since the community is smaller, but the paradigm is much more simple for non-React-brained folks to understand easily.
 
 ### SolidJS
@@ -75,8 +91,20 @@ It's been a few years since I tried out SolidJS. It's very similar to Svelte in 
 ```JSX
 import { createSignal } from "solid-js";
 
-const [count, setCount] = createSignal(0);
-//       ^ getter  ^ setter
+const Component = () => {
+  const [count, setCount] = createSignal(0);
+  //       ^ getter  ^ setter
+  const increment = () => {
+    setCount(() => count() + 1);
+  }
+
+  return (
+    <div>
+      <div>Count: {count()}</div>
+      <button onClick={increment}>Increment</button>
+    </div>
+  )
+}
 ````
 
 SolidJS is an even smaller community than Svelte, but it's more mature, follows patterns of React's JSX, and has a highly dedicated community that makes up for its size.
