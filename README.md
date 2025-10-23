@@ -3,15 +3,60 @@
 - **template of:** rolldown-vite + react + typescript
 - **tailwindcss:** v4.x
 
+## Purpose
+
+When writing React components, it's often really nice to spin up a clean project to make sure the compnent can stand on its own outside the development environment you might be working in. This creates an easy to use typescript template that will instantly give you TailwindCSS and the benefits of Rolldown-Vite HMR. Additional libraries to use are mentioned below.
+
+## Usage
+
+### Prerequisites
+
+1. Install [`degit`](https://github.com/Rich-Harris/degit)
+
+```bash
+npm install -g degit
+```
+
+## Using this template
+
+1. Run the clone command via degit
+
+```bash
+degit magicjaqk/ts-react-vite-template [PROJECT_NAME]
+```
+
+2. Change to the directory of the project
+```bash
+cd [PROJECT_NAME]
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start the development server
+
+```bash
+npm run dev
+```
+
 ## Recommended Libraries
 
 - [Lenis](https://lenis.darkroom.engineering/)
 - [Tanstack Router](https://tanstack.com/router/latest)
 - [React Query](https://react-query.tanstack.com/)
 - [React Hook Form](https://react-hook-form.com/)
-- [React Spring](https://react-spring.dev/)
+- [Motion](https://motion.dev/)
 - [React useGesture](https://use-gesture.netlify.app/)
+
+## Metaframeworks
+- [NextJS](https://nextjs.org/)
 - [Tanstack Start](https://tanstack.com/start/latest)
+
+> [!CAUTION]
+> I'm increasingly looking to Tanstack Start over NextJS because NextJS has some Vercel vendor lock in that's tough to deal with. It's not impossible to use on Cloudflare, for example. However, it certainly creates other problems to overcome if you're not within the Vercel ecosystem.
 
 ## Other paths to consider for better baseline performance
 - [SvelteKit & Svelte](https://www.svelte.dev/)
