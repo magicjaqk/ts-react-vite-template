@@ -58,7 +58,7 @@ npm run dev
 > [!CAUTION]
 > I'm increasingly looking to Tanstack Start over NextJS because NextJS has some Vercel vendor lock in that's tough to deal with. It's not impossible to use on Cloudflare, for example. However, it certainly creates other problems to overcome if you're not within the Vercel ecosystem.
 
-## Other paths to consider for better baseline performance
+## Other paths to consider for better baseline performance ([fine-grained reactivity](https://docs.solidjs.com/advanced-concepts/fine-grained-reactivity))
 - [SvelteKit & Svelte](https://www.svelte.dev/)
 - [SolidJS](https://www.solidjs.com/) & [SolidStart](https://start.solidjs.com/)
 
@@ -70,6 +70,13 @@ With Svelte, you'll often be paving your own way forward in Svelte-land since th
 
 ### SolidJS
 
-It's been a few years since I tried out SolidJS. It's very similar to Svelte in that it uses [signals](https://docs.solidjs.com/concepts/signals) for reactivity. While Svelte uses a compiler to create signals and maintain a developer experience of mutable variables, SolidJS aims to recreate the developer experience of React.
+It's been a few years since I tried out SolidJS. It's very similar to Svelte in that it uses [signals](https://docs.solidjs.com/concepts/signals) for reactivity. While Svelte uses a compiler to create signals and maintain a developer experience of mutable variables, SolidJS aims to recreate the developer experience of React, creating signals via hooks.
+
+```JSX
+import { createSignal } from "solid-js";
+
+const [count, setCount] = createSignal(0);
+//       ^ getter  ^ setter
+````
 
 SolidJS is an even smaller community than Svelte, but it's more mature, follows patterns of React's JSX, and has a highly dedicated community that makes up for its size.
